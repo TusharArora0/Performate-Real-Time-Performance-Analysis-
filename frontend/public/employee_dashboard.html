@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard - Perform Mate</title>
+    <link rel="stylesheet" href="emp_dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Employee Dashboard</h1>
+            <nav>
+                <a href="index.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="dashboard-section">
+                <h2>Employee Information</h2>
+                <div class="card">
+                    <p id="employeeName">Loading...</p>
+                    <p id="employeeEmail">Loading...</p>
+                    <p id="employeeWorkDone">Loading...</p>
+                    <p id="employeeWorkHours">Loading...</p>
+                    <p id="employeeAttendance">Loading...</p>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <h2>My Tasks</h2>
+                <div class="card">
+                    <div id="tasksList">
+                        <table id="tasksTable">
+                            <thead>
+                                <tr>
+                                    <th>Task Description</th>
+                                    <th>Status</th>
+                                    <th>Assigned Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <h2>Appraisals</h2>
+                <div class="card" id="appraisalsContainer">
+                    <!-- Appraisals will be loaded here -->
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <h2>Performance Overview</h2>
+                <div class="card">
+                    <p id="performanceScore">Loading...</p>
+                    <p id="performanceLevel">Loading...</p>
+                    <p id="performanceRemarks">Loading...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="employee.js"></script>
+</body>
+</html>

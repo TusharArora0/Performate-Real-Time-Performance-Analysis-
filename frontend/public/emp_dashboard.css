@@ -1,0 +1,245 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Container for page content */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    margin-left: 20px;
+    display: inline-block;
+  }
+  
+  header nav {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #3949ab;
+  }
+  
+  /* Main Content Styling */
+  main {
+    flex-grow: 1;
+    padding-top: 20px;
+  }
+  
+  /* Dashboard Section Styling */
+  .dashboard-section {
+    margin-bottom: 40px;
+  }
+  
+  .dashboard-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Card Styling for each section */
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .card ul li {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  .card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .card table th,
+  .card table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .card table th {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .card table td {
+    background-color: #ffffff;
+  }
+  
+  .card table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Performance Rating Styling */
+  #performanceRating {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 22px;
+    }
+  
+    header nav a {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .dashboard-section h2 {
+      font-size: 20px;
+    }
+  }
+  
+  #tasksTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  #tasksTable th,
+  #tasksTable td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #tasksTable th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  #tasksTable tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Performance Indicator Styles */
+  .performance-indicator {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .performance-indicator .score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .performance-indicator .level {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .performance-indicator .remarks {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  /* Performance Level Colors */
+  .performance-excellent {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .performance-good {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+  }
+  
+  .performance-average {
+    background-color: #ffe5d0;
+    color: #ff6b01;
+    border: 1px solid #ffd1b3;
+  }
+  
+  .performance-low {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  /* Add hover effect */
+  .performance-indicator:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Update card styling */
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Make sure text is readable */
+  .card p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

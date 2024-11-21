@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Performance - Perform Mate</title>
+  <link rel="stylesheet" href="employee_performance.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Employee Performance Details</h1>
+      <button onclick="window.location.href='admin_dashboard.html'" class="back-btn">Back to Dashboard</button>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="performance-card" id="performanceDetails">
+        <!-- Performance details will be populated here -->
+      </div>
+      <div class="tasks-section">
+        <h2>Assigned Tasks</h2>
+        <div class="tasks-card">
+          <table id="tasksTable">
+            <thead>
+              <tr>
+                <th>Task Description</th>
+                <th>Status</th>
+                <th>Assigned Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Tasks will be populated here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="employee_performance.js"></script>
+</body>
+</html>

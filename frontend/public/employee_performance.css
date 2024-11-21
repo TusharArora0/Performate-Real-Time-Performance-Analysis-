@@ -1,0 +1,181 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container for page content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #3949ab;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #d1d9ff;
+}
+
+/* Main Content Styling */
+main {
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+/* Dashboard Section Styling */
+.dashboard-section {
+    margin-bottom: 40px;
+}
+
+.dashboard-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    border-left: 4px solid #5c6bc0;
+    padding-left: 8px;
+}
+
+/* Card Styling for each section */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Performance Table Styling */
+#performanceTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#performanceTable th,
+#performanceTable td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+#performanceTable th {
+    background-color: #e8eaf6;
+    color: #333;
+    font-weight: bold;
+}
+
+#performanceTable td {
+    background-color: #ffffff;
+}
+
+#performanceTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#performanceTable tr:hover {
+    background-color: #f1f1ff;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    header nav a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .dashboard-section h2 {
+        font-size: 20px;
+    }
+}
+
+/* Summary Card Styling */
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Appraisal Button Styling */
+.appraisal-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.appraisal-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Metrics Display */
+.metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.9em;
+}
+
+.metrics span {
+    display: block;
+}

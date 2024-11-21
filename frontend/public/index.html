@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Perform Mate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to Perform Mate</h2>
+    <form id="loginForm">
+      <!-- Username input with label -->
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+
+      <!-- Password input with label -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit">Login</button>
+
+      <!-- Error message for invalid login -->
+      <p id="error-message" class="error-message"></p>
+    </form>
+
+    <!-- Link to signup page -->
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+
+  <!-- Link to external JS file -->
+  <script src="login.js"></script>
+</body>
+</html>
