@@ -20,8 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
             if (data.role) {
                 // Save the logged-in username to localStorage upon successful login
                 localStorage.setItem('loggedInUser', data.username);
-                // Redirect to employee dashboard
-                window.location.href = 'employee_dashboard.html';
+                // Redirect based on user role
+                if (data.role === 'admin') {
+                    window.location.href = 'admin_dashboard.html'; // Redirect to admin dashboard
+                } else if (data.role === 'employee') {
+                    window.location.href = 'employee_dashboard.html'; // Redirect to employee dashboard
+                }
             } else {
                 document.getElementById('error-message').textContent = data.error;
             }
